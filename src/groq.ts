@@ -15,16 +15,67 @@ export const generateWord = async (usedWords: string[]): Promise<GroqResponse> =
     // We just take a random theme and prompt the model to give us a word and a category
     const theme = getRandomTheme();
     
-    const prompt = `Generate a word and a simple category for a guessing game. The word should be related to the theme: "${theme}".
-Return only a JSON object in this format, and absolutely nothing else:
+    const prompt = `You are an expert party game designer. Generate a fun, highly engaging secret word and a related category clue for an impostor-style social deduction game.
+
+Previously used words (DO NOT USE THESE): ${usedWords.join(', ')}
+
+Your job is to generate:
+1. One specific secret word.
+2. One related category clue.
+
+
+GOOD EXAMPLES:
+
+"word": "Hogwarts",
+"category": "School"
+
+"word": "Lightsaber",
+"category": "Weapon"
+
+"word": "Tinder",
+"category": "App"
+
+"word": "Shrek",
+"category": "Hero"
+
+"word": "Crocs",
+"category": "Footwear"
+
+"word": "Disneyland",
+"category": "Park"
+
+"word": "Godzilla",
+"category": "Monster"
+
+"word": "Netflix",
+"category": "Subscription"
+
+### Category Rules
+The category must help the impostor blend in during the conversation, but MUST NOT give the exact word away.
+*   Make categories creative and conversational, not just broad genres. 
+*   The categories you were giving are too obvious for the impostor to blend in, I want to make it hard for the impostor.
+
+### Prioritize:
+*   Pop culture references, iconic brands, famous characters, nostalgic topics, memes, and universally recognizable objects/people.
+*   Words that are instantly recognizable by most people aged 16-30.
+*   Concepts that naturally create funny, slightly ambiguous discussion opportunities.
+
+### Avoid:
+*   Obscure references, regional terms, or highly technical jargon.
+*   Categories that are so generic the impostor has nothing to go on.
+
+IMPORTANT:
+Return ONLY valid JSON.
+No markdown formatting (do not wrap in json).
+No explanations.
+No extra text.
+
+Required format:
 {
-  "word": "...",
-  "category": "..."
+"word": "...",
+"category": "..."
 }
-The category should be broad enough so other people can guess the word easily, but not too broad.
-Avoid obscure words.
-Do not use these words, they have already been used: ${usedWords.join(', ')}
-    `;
+`;
 
     const chatCompletion = await groq.chat.completions.create({
         messages: [{ role: "user", content: prompt }],

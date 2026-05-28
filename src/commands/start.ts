@@ -1,9 +1,9 @@
-import { WASocket } from '@whiskeysockets/baileys';
+import { WASocket, jidNormalizedUser } from '@whiskeysockets/baileys';
 import { gameState } from '../gameState';
 import { generateWord } from '../groq';
 import { shuffleArray } from '../utils/shuffle';
 
-export const handleStartCommand = async (sock: WASocket, groupId: string, botId: string) => {
+export const handleStartCommand = async (sock: WASocket, groupId: string, botId: string, botLid: string) => {
     
     // Fetch group participants
     const groupMetadata = await sock.groupMetadata(groupId);
@@ -52,9 +52,14 @@ export const handleStartCommand = async (sock: WASocket, groupId: string, botId:
 
             const sentMessage = await sock.sendMessage(playerId, { text: messageText });
             
+            const normalizedPlayerId = jidNormalizedUser(playerId);
+            const isBot = normalizedPlayerId === jidNormalizedUser(botId) || normalizedPlayerId === jidNormalizedUser(botLid);
+            
+            console.log(`[DEBUG] Sending to ${normalizedPlayerId}. isBot? ${isBot}`);
+
             // Delete for me if it's NOT the bot's own number
-            // The bot's number is `botId` which usually ends in @s.whatsapp.net
-            if (playerId !== botId && sentMessage) {
+            if (!isBot && sentMessage) {
+                console.log(`[DEBUG] -> Executing deleteForMe for ${normalizedPlayerId}`);
                 // Perform delete for me LOCALLY
                 await sock.chatModify({
                     deleteForMe: {

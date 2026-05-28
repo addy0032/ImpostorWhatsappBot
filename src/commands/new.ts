@@ -1,11 +1,11 @@
-import { WASocket } from '@whiskeysockets/baileys';
+import { WASocket, jidNormalizedUser } from '@whiskeysockets/baileys';
 import { gameState } from '../gameState';
 import { handleStartCommand } from './start';
 
 import { generateWord } from '../groq';
 import { shuffleArray } from '../utils/shuffle';
 
-export const handleNewCommand = async (sock: WASocket, groupId: string, botId: string) => {
+export const handleNewCommand = async (sock: WASocket, groupId: string, botId: string, botLid: string) => {
     
     // Check if there is an active game or at least a previous game structure
     if (!gameState.groupId || gameState.players.length === 0) {
@@ -39,8 +39,14 @@ export const handleNewCommand = async (sock: WASocket, groupId: string, botId: s
 
             const sentMessage = await sock.sendMessage(playerId, { text: messageText });
             
+            const normalizedPlayerId = jidNormalizedUser(playerId);
+            const isBot = normalizedPlayerId === jidNormalizedUser(botId) || normalizedPlayerId === jidNormalizedUser(botLid);
+            
+            console.log(`[DEBUG] Attempting to send to ${normalizedPlayerId}. isBot? ${isBot}`);
+
             // Delete for me locally
-            if (playerId !== botId && sentMessage) {
+            if (!isBot && sentMessage) {
+                console.log(`[DEBUG] -> Executing deleteForMe for ${normalizedPlayerId}`);
                 await sock.chatModify({
                     deleteForMe: {
                         deleteMedia: false,

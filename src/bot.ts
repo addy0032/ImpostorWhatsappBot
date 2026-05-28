@@ -1,4 +1,4 @@
-import { makeWASocket, useMultiFileAuthState, DisconnectReason } from '@whiskeysockets/baileys';
+import { makeWASocket, useMultiFileAuthState, DisconnectReason, jidNormalizedUser } from '@whiskeysockets/baileys';
 import { Boom } from '@hapi/boom';
 import * as path from 'path';
 import qrcode from 'qrcode-terminal';
@@ -50,7 +50,12 @@ export const startBot = async () => {
             const jid = msg.key.remoteJid;
             if (!jid || !jid.endsWith('@g.us')) continue; // Only listen in groups
 
-            const botId = sock.user?.id.split(':')[0] + '@s.whatsapp.net';
+            const botJidRaw = sock.user?.id || sock.authState.creds.me?.id;
+            const botLidRaw = sock.authState.creds.me?.lid;
+            
+            const botId = botJidRaw ? jidNormalizedUser(botJidRaw) : '';
+            const botLid = botLidRaw ? jidNormalizedUser(botLidRaw) : '';
+            console.log(`[DEBUG] Bot IDs resolved to: JID=${botId} LID=${botLid}`);
 
             // Get text content
             const messageContent = msg.message.conversation || msg.message.extendedTextMessage?.text;
@@ -59,9 +64,9 @@ export const startBot = async () => {
             const text = messageContent.trim().toLowerCase();
 
             if (text === '!start') {
-                await handleStartCommand(sock, jid, botId);
+                await handleStartCommand(sock, jid, botId, botLid);
             } else if (text === '!new') {
-                await handleNewCommand(sock, jid, botId);
+                await handleNewCommand(sock, jid, botId, botLid);
             } else if (text === '!end') {
                 await handleEndCommand(sock, jid);
             }
