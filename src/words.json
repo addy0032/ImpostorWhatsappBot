@@ -1,0 +1,802 @@
+[
+{
+"word": "Group chat",
+"category": "Drama"
+},
+{
+"word": "Doomscrolling",
+"category": "Spiral"
+},
+{
+"word": "Read receipts",
+"category": "Evidence"
+},
+{
+"word": "Burner account",
+"category": "Disguise"
+},
+{
+"word": "Typing indicator",
+"category": "Suspense"
+},
+{
+"word": "AirDrop",
+"category": "Transfer"
+},
+{
+"word": "Screen time",
+"category": "Metric"
+},
+{
+"word": "Algorithm",
+"category": "Feed"
+},
+{
+"word": "Low battery",
+"category": "Panic"
+},
+{
+"word": "Uber rating",
+"category": "Score"
+},
+{
+"word": "BeReal",
+"category": "Timer"
+},
+{
+"word": "Finsta",
+"category": "Spam"
+},
+{
+"word": "FYP",
+"category": "Scrolling"
+},
+{
+"word": "Story",
+"category": "Expires"
+},
+{
+"word": "Reels",
+"category": "Swiping"
+},
+{
+"word": "Close friends",
+"category": "Exclusive"
+},
+{
+"word": "Blue check",
+"category": "Verification"
+},
+{
+"word": "Shadowban",
+"category": "Hidden"
+},
+{
+"word": "Ratio",
+"category": "Defeat"
+},
+{
+"word": "Photodump",
+"category": "Carousel"
+},
+{
+"word": "Spam account",
+"category": "Clutter"
+},
+{
+"word": "Link in bio",
+"category": "Plug"
+},
+{
+"word": "Discord",
+"category": "Server"
+},
+{
+"word": "Twitch",
+"category": "Stream"
+},
+{
+"word": "Spotify Wrapped",
+"category": "Stats"
+},
+{
+"word": "Voice note",
+"category": "Audio"
+},
+{
+"word": "Phishing",
+"category": "Scam"
+},
+{
+"word": "Auto-correct",
+"category": "Typo"
+},
+{
+"word": "Out of storage",
+"category": "Crisis"
+},
+{
+"word": "Unsubscribe",
+"category": "Peace"
+},
+{
+"word": "Notification",
+"category": "Ping"
+},
+{
+"word": "Rizz",
+"category": "Charisma"
+},
+{
+"word": "Sus",
+"category": "Sketchy"
+},
+{
+"word": "Mid",
+"category": "Average"
+},
+{
+"word": "Slay",
+"category": "Excellence"
+},
+{
+"word": "Cheugy",
+"category": "Outdated"
+},
+{
+"word": "Bussin",
+"category": "Delicious"
+},
+{
+"word": "Cap",
+"category": "Lie"
+},
+{
+"word": "Bet",
+"category": "Agreement"
+},
+{
+"word": "Touch grass",
+"category": "Reality"
+},
+{
+"word": "Gatekeeping",
+"category": "Hoarding"
+},
+{
+"word": "Gaslighting",
+"category": "Manipulation"
+},
+{
+"word": "Girlboss",
+"category": "Hustle"
+},
+{
+"word": "Delulu",
+"category": "Fantasy"
+},
+{
+"word": "Solulu",
+"category": "Solution"
+},
+{
+"word": "It's giving",
+"category": "Vibe"
+},
+{
+"word": "Main character",
+"category": "Protagonist"
+},
+{
+"word": "The Ick",
+"category": "Turnoff"
+},
+{
+"word": "Era",
+"category": "Phase"
+},
+{
+"word": "Rent-free",
+"category": "Lingering"
+},
+{
+"word": "Salty",
+"category": "Bitter"
+},
+{
+"word": "Woke",
+"category": "Aware"
+},
+{
+"word": "Aesthetic",
+"category": "Visuals"
+},
+{
+"word": "Core",
+"category": "Theme"
+},
+{
+"word": "Niche",
+"category": "Specific"
+},
+{
+"word": "Brat summer",
+"category": "Chaotic"
+},
+{
+"word": "Mewing",
+"category": "Jawline"
+},
+{
+"word": "Looksmaxxing",
+"category": "Optimization"
+},
+{
+"word": "Ohio",
+"category": "Cursed"
+},
+{
+"word": "Gyatt",
+"category": "Exclamation"
+},
+{
+"word": "Fanum tax",
+"category": "Theft"
+},
+{
+"word": "Spill the tea",
+"category": "Gossip"
+},
+{
+"word": "Receipts",
+"category": "Proof"
+},
+{
+"word": "Taking an L",
+"category": "Loss"
+},
+{
+"word": "Taking a W",
+"category": "Victory"
+},
+{
+"word": "Periodt",
+"category": "Finality"
+},
+{
+"word": "Savage",
+"category": "Ruthless"
+},
+{
+"word": "Simp",
+"category": "Desperate"
+},
+{
+"word": "Snack",
+"category": "Attractive"
+},
+{
+"word": "Yeet",
+"category": "Throw"
+},
+{
+"word": "Brainrot",
+"category": "Nonsense"
+},
+{
+"word": "Skibidi",
+"category": "Absurdity"
+},
+{
+"word": "Pop off",
+"category": "Hype"
+},
+{
+"word": "Valid",
+"category": "Acceptable"
+},
+{
+"word": "Based",
+"category": "Unapologetic"
+},
+{
+"word": "Cringe",
+"category": "Uncomfortable"
+},
+{
+"word": "Flex",
+"category": "Boast"
+},
+{
+"word": "FOMO",
+"category": "Missing"
+},
+{
+"word": "JOMO",
+"category": "Joy"
+},
+{
+"word": "Stan",
+"category": "Obsessive"
+},
+{
+"word": "Situationship",
+"category": "Limbo"
+},
+{
+"word": "Ghosting",
+"category": "Disappearance"
+},
+{
+"word": "Hard launch",
+"category": "Announcement"
+},
+{
+"word": "Soft launch",
+"category": "Tease"
+},
+{
+"word": "Sneaky link",
+"category": "Secret"
+},
+{
+"word": "Trauma bond",
+"category": "Attachment"
+},
+{
+"word": "Love bombing",
+"category": "Overload"
+},
+{
+"word": "Breadcrumbing",
+"category": "Traces"
+},
+{
+"word": "Red flag",
+"category": "Warning"
+},
+{
+"word": "Beige flag",
+"category": "Quirk"
+},
+{
+"word": "Green flag",
+"category": "Healthy"
+},
+{
+"word": "Orbiting",
+"category": "Lurking"
+},
+{
+"word": "Cuffing season",
+"category": "Winter"
+},
+{
+"word": "DTR",
+"category": "Define"
+},
+{
+"word": "Friend zone",
+"category": "Platonic"
+},
+{
+"word": "Hinge prompt",
+"category": "Icebreaker"
+},
+{
+"word": "Match",
+"category": "Pair"
+},
+{
+"word": "Tinder swindler",
+"category": "Con"
+},
+{
+"word": "Left on read",
+"category": "Ignored"
+},
+{
+"word": "Double text",
+"category": "Desperation"
+},
+{
+"word": "Sliding into DMs",
+"category": "Approach"
+},
+{
+"word": "Mutuals",
+"category": "Overlap"
+},
+{
+"word": "Roster",
+"category": "Options"
+},
+{
+"word": "Breakup",
+"category": "Split"
+},
+{
+"word": "Side hustle",
+"category": "Grind"
+},
+{
+"word": "Quiet quitting",
+"category": "Coasting"
+},
+{
+"word": "Overthinking",
+"category": "Pondering"
+},
+{
+"word": "Hangxiety",
+"category": "Regret"
+},
+{
+"word": "Procrastination",
+"category": "Delay"
+},
+{
+"word": "Self-care",
+"category": "Pamper"
+},
+{
+"word": "Therapy",
+"category": "Processing"
+},
+{
+"word": "Imposter syndrome",
+"category": "Fraud"
+},
+{
+"word": "Burnout",
+"category": "Exhaustion"
+},
+{
+"word": "Sleep paralysis",
+"category": "Demon"
+},
+{
+"word": "Sunday scaries",
+"category": "Dread"
+},
+{
+"word": "Manifesting",
+"category": "Attracting"
+},
+{
+"word": "Astrology",
+"category": "Stars"
+},
+{
+"word": "Birth chart",
+"category": "Blueprint"
+},
+{
+"word": "Tarot cards",
+"category": "Divination"
+},
+{
+"word": "Mercury retrograde",
+"category": "Chaos"
+},
+{
+"word": "Crystals",
+"category": "Aura"
+},
+{
+"word": "Boundary",
+"category": "Limit"
+},
+{
+"word": "Dopamine",
+"category": "Chemical"
+},
+{
+"word": "Affirmations",
+"category": "Mantra"
+},
+{
+"word": "Journaling",
+"category": "Venting"
+},
+{
+"word": "Crocs",
+"category": "Foam"
+},
+{
+"word": "Claw clip",
+"category": "Updo"
+},
+{
+"word": "Pimple patch",
+"category": "Blemish"
+},
+{
+"word": "Mullet",
+"category": "Business"
+},
+{
+"word": "Bleached eyebrows",
+"category": "Edgy"
+},
+{
+"word": "Dyson Airwrap",
+"category": "Blowout"
+},
+{
+"word": "Flare leggings",
+"category": "Yoga"
+},
+{
+"word": "Thrifting",
+"category": "Vintage"
+},
+{
+"word": "Micro-trend",
+"category": "Fad"
+},
+{
+"word": "Gua sha",
+"category": "Sculpting"
+},
+{
+"word": "Retinol",
+"category": "Skincare"
+},
+{
+"word": "Tote bag",
+"category": "Canvas"
+},
+{
+"word": "Uggs",
+"category": "Fluff"
+},
+{
+"word": "Cargo pants",
+"category": "Pockets"
+},
+{
+"word": "Skims",
+"category": "Shapewear"
+},
+{
+"word": "BBL",
+"category": "Surgery"
+},
+{
+"word": "Lip filler",
+"category": "Plump"
+},
+{
+"word": "Curtain bangs",
+"category": "Fringe"
+},
+{
+"word": "Shein haul",
+"category": "Fast"
+},
+{
+"word": "Streetwear",
+"category": "Drip"
+},
+{
+"word": "Y2K",
+"category": "Throwback"
+},
+{
+"word": "Balletcore",
+"category": "Ribbons"
+},
+{
+"word": "Clean girl",
+"category": "Slicked"
+},
+{
+"word": "E-girl",
+"category": "Blush"
+},
+{
+"word": "Wolf cut",
+"category": "Shaggy"
+},
+{
+"word": "Stanley cup",
+"category": "Tumbler"
+},
+{
+"word": "Iced coffee",
+"category": "Jitters"
+},
+{
+"word": "Matcha",
+"category": "Green"
+},
+{
+"word": "Oat milk",
+"category": "Alternative"
+},
+{
+"word": "Cold brew",
+"category": "Caffeine"
+},
+{
+"word": "Boba",
+"category": "Pearls"
+},
+{
+"word": "Celsius",
+"category": "Fuel"
+},
+{
+"word": "White Claw",
+"category": "Seltzer"
+},
+{
+"word": "Kombucha",
+"category": "Fermented"
+},
+{
+"word": "Takis",
+"category": "Spicy"
+},
+{
+"word": "Sweet treat",
+"category": "Reward"
+},
+{
+"word": "Avocado toast",
+"category": "Brunch"
+},
+{
+"word": "Sriracha",
+"category": "Sauce"
+},
+{
+"word": "Truffle fries",
+"category": "Fancy"
+},
+{
+"word": "Vegan",
+"category": "Plant"
+},
+{
+"word": "Gluten-free",
+"category": "Wheatless"
+},
+{
+"word": "Birria tacos",
+"category": "Dipped"
+},
+{
+"word": "Mochi",
+"category": "Dough"
+},
+{
+"word": "Air fryer",
+"category": "Crisp"
+},
+{
+"word": "Meal prep",
+"category": "Containers"
+},
+{
+"word": "Charcuterie board",
+"category": "Platter"
+},
+{
+"word": "Grimace shake",
+"category": "Purple"
+},
+{
+"word": "Glizzy",
+"category": "Hotdog"
+},
+{
+"word": "Meme",
+"category": "Template"
+},
+{
+"word": "GIF",
+"category": "Loop"
+},
+{
+"word": "Influencer",
+"category": "Sponsored"
+},
+{
+"word": "Podcast",
+"category": "Microphone"
+},
+{
+"word": "ASMR",
+"category": "Tingles"
+},
+{
+"word": "Mukbang",
+"category": "Feast"
+},
+{
+"word": "Unboxing",
+"category": "Packaging"
+},
+{
+"word": "GRWM",
+"category": "Routine"
+},
+{
+"word": "POV",
+"category": "Perspective"
+},
+{
+"word": "NPC",
+"category": "Background"
+},
+{
+"word": "Copypasta",
+"category": "Text"
+},
+{
+"word": "Rickroll",
+"category": "Prank"
+},
+{
+"word": "Clickbait",
+"category": "Deception"
+},
+{
+"word": "Cancel culture",
+"category": "Exile"
+},
+{
+"word": "Troll",
+"category": "Provoker"
+},
+{
+"word": "Eras Tour",
+"category": "Concert"
+},
+{
+"word": "Coachella",
+"category": "Desert"
+},
+{
+"word": "Bottomless brunch",
+"category": "Mimosas"
+},
+{
+"word": "Pre-game",
+"category": "Warmup"
+},
+{
+"word": "Afterparty",
+"category": "Late"
+},
+{
+"word": "Farmer's market",
+"category": "Produce"
+},
+{
+"word": "Pilates",
+"category": "Reformer"
+},
+{
+"word": "Spin class",
+"category": "Cycling"
+},
+{
+"word": "Bouldering",
+"category": "Climbing"
+},
+{
+"word": "Pickleball",
+"category": "Paddles"
+},
+{
+"word": "Escape room",
+"category": "Puzzles"
+},
+{
+"word": "Pottery class",
+"category": "Clay"
+}
+]

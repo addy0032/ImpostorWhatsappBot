@@ -15,66 +15,38 @@ export const generateWord = async (usedWords: string[]): Promise<GroqResponse> =
     // We just take a random theme and prompt the model to give us a word and a category
     const theme = getRandomTheme();
     
-    const prompt = `You are an expert party game designer. Generate a fun, highly engaging secret word and a related category clue for an impostor-style social deduction game.
+    const prompt = `You are an expert party game designer creating prompts for an impostor-style social deduction game for Indian Gen Z players aged 18–21.
 
-Previously used words (DO NOT USE THESE): ${usedWords.join(', ')}
-
-Your job is to generate:
-1. One specific secret word.
+Generate:
+1. One secret word.
 2. One related category clue.
 
+Audience and style:
+- Keep it fun, lively, and conversation-friendly.
 
-GOOD EXAMPLES:
+Hard rules:
+- The secret word should be specific, concrete, and easy to talk about.
+- The category clue must NOT reveal the word directly.
+- The category clue should be subtle and slightly broad, so the impostor can blend in.
+- Do NOT use obvious categories like “movie”, “food”, “app”, “person”, “place”, or “brand” unless the word is hard enough that the impostor still has room to fake it.
+- Avoid obscure, regional, technical, outdated, or very niche references.
+- Avoid words that are too generic or too famous in a way that makes the category obvious.
+- Prefer words that create funny, slightly ambiguous conversation.
 
-"word": "Hogwarts",
-"category": "School"
+Output rules:
+- Return ONLY valid JSON.
+- No markdown.
+- No extra text.
+- Use exactly this format:
 
-"word": "Lightsaber",
-"category": "Weapon"
-
-"word": "Tinder",
-"category": "App"
-
-"word": "Shrek",
-"category": "Hero"
-
-"word": "Crocs",
-"category": "Footwear"
-
-"word": "Disneyland",
-"category": "Park"
-
-"word": "Godzilla",
-"category": "Monster"
-
-"word": "Netflix",
-"category": "Subscription"
-
-### Category Rules
-The category must help the impostor blend in during the conversation, but MUST NOT give the exact word away.
-*   Make categories creative and conversational, not just broad genres. 
-*   The categories you were giving are too obvious for the impostor to blend in, I want to make it hard for the impostor.
-
-### Prioritize:
-*   Pop culture references, iconic brands, famous characters, nostalgic topics, memes, and universally recognizable objects/people.
-*   Words that are instantly recognizable by most people aged 16-30.
-*   Concepts that naturally create funny, slightly ambiguous discussion opportunities.
-
-### Avoid:
-*   Obscure references, regional terms, or highly technical jargon.
-*   Categories that are so generic the impostor has nothing to go on.
-
-IMPORTANT:
-Return ONLY valid JSON.
-No markdown formatting (do not wrap in json).
-No explanations.
-No extra text.
-
-Required format:
 {
-"word": "...",
-"category": "..."
+  "word": "...",
+  "category": "..."
 }
+
+Quality target:
+- The category should feel like a real hint a human would give in conversation, not a textbook label.
+- The impostor should have a fair chance to guess the theme, but not the exact word.
 `;
 
     const chatCompletion = await groq.chat.completions.create({

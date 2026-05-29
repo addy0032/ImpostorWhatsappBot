@@ -29,12 +29,19 @@ export const startBot = async () => {
         }
 
         if (connection === 'close') {
-            const shouldReconnect = (lastDisconnect?.error as Boom)?.output?.statusCode !== DisconnectReason.loggedOut;
+            const statusCode = (lastDisconnect?.error as Boom)?.output?.statusCode;
+            
+            // If logged out or if there's a conflict (another instance took over), we should arguably stop
+            const shouldReconnect = statusCode !== DisconnectReason.loggedOut && statusCode !== 440;
+            
             console.log('connection closed due to ', lastDisconnect?.error, ', reconnecting ', shouldReconnect);
             
-            // reconnect if not logged out
+            // reconnect if not logged out & not a conflict
             if (shouldReconnect) {
                 startBot();
+            } else if (statusCode === 440 || statusCode === DisconnectReason.loggedOut) {
+                console.error("Critical disconnect (logged out or conflict). Clean auth_info folder and restart manually.");
+                process.exit(1);
             }
         } else if (connection === 'open') {
             console.log('opened connection');
@@ -62,9 +69,10 @@ export const startBot = async () => {
             if (!messageContent) continue;
 
             const text = messageContent.trim().toLowerCase();
+            const mentionedJid = msg.message.extendedTextMessage?.contextInfo?.mentionedJid || [];
 
-            if (text === '!start') {
-                await handleStartCommand(sock, jid, botId, botLid);
+            if (text === '!start' || text.startsWith('!start ')) {
+                await handleStartCommand(sock, jid, botId, botLid, mentionedJid);
             } else if (text === '!new') {
                 await handleNewCommand(sock, jid, botId, botLid);
             } else if (text === '!end') {

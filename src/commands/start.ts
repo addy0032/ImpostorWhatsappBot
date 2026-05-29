@@ -3,22 +3,34 @@ import { gameState } from '../gameState';
 import { generateWord } from '../groq';
 import { shuffleArray } from '../utils/shuffle';
 
-export const handleStartCommand = async (sock: WASocket, groupId: string, botId: string, botLid: string) => {
+export const handleStartCommand = async (sock: WASocket, groupId: string, botId: string, botLid: string, mentionedJid: string[] = []) => {
     
     // Fetch group participants
     const groupMetadata = await sock.groupMetadata(groupId);
     
-    // Exclude the bot itself from being an imposter or getting regular message like other normal players?
-    // Wait, the rule says: 3. The bot sends PRIVATE DMs to every player and to the number that the bot is running on because I will be playing too and the bot will run on my number.
-    // The bot's own number is the number playing.
-    
-    // So all participants are players!
-    const allParticipants = groupMetadata.participants.map(p => p.id);
-    
-    // Because I am also playing and the bot will run on my number.
+    // Determine the participants
+    let allParticipants: string[] = [];
+
+    // If specific people are mentioned, include only them + the bot owner
+    if (mentionedJid && mentionedJid.length > 0) {
+        allParticipants = [...mentionedJid];
+        
+        // Ensure the bot owner is always in the game, because "I am playing the game too"
+        const hasBot = allParticipants.some(id => 
+            jidNormalizedUser(id) === jidNormalizedUser(botId) || 
+            jidNormalizedUser(id) === jidNormalizedUser(botLid)
+        );
+        
+        if (!hasBot && botId) {
+            allParticipants.push(botId);
+        }
+    } else {
+        // If no mentions, include ALL group members
+        allParticipants = groupMetadata.participants.map(p => p.id);
+    }
     
     gameState.groupId = groupId;
-    gameState.players = allParticipants;
+    gameState.players = [...new Set(allParticipants)]; // Ensure no duplicates
     
     // If less than 2 people, this makes no sense
     if (gameState.players.length < 2) {
