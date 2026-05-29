@@ -798,5 +798,805 @@
 {
 "word": "Pottery class",
 "category": "Clay"
+},
+{
+"word": "iPad kid",
+"category": "Menace"
+},
+{
+"word": "Duolingo bird",
+"category": "Threat"
+},
+{
+"word": "LinkedIn",
+"category": "Corporate"
+},
+{
+"word": "Venmo request",
+"category": "Debt"
+},
+{
+"word": "Zillow surfing",
+"category": "Daydream"
+},
+{
+"word": "Apple Pay",
+"category": "Tap"
+},
+{
+"word": "Pinterest board",
+"category": "Vision"
+},
+{
+"word": "Incognito mode",
+"category": "Secret"
+},
+{
+"word": "CAPTCHA",
+"category": "Robot"
+},
+{
+"word": "WebMD",
+"category": "Diagnosis"
+},
+{
+"word": "Location sharing",
+"category": "Tracker"
+},
+{
+"word": "Screen protector",
+"category": "Shield"
+},
+{
+"word": "Zoom background",
+"category": "Illusion"
+},
+{
+"word": "Depop",
+"category": "Resale"
+},
+{
+"word": "Airplane mode",
+"category": "Disconnect"
+},
+{
+"word": "Battery health",
+"category": "Lifespan"
+},
+{
+"word": "Group project",
+"category": "Carry"
+},
+{
+"word": "Yapping",
+"category": "Chatter"
+},
+{
+"word": "Lore",
+"category": "Backstory"
+},
+{
+"word": "Flop era",
+"category": "Downfall"
+},
+{
+"word": "Pookie",
+"category": "Endearment"
+},
+{
+"word": "Glazing",
+"category": "Flattery"
+},
+{
+"word": "Locked in",
+"category": "Focused"
+},
+{
+"word": "Canon event",
+"category": "Inevitable"
+},
+{
+"word": "Side quest",
+"category": "Detour"
+},
+{
+"word": "Unhinged",
+"category": "Wild"
+},
+{
+"word": "Chronically online",
+"category": "Plugged"
+},
+{
+"word": "Feral",
+"category": "Rabid"
+},
+{
+"word": "Letting it marinate",
+"category": "Processing"
+},
+{
+"word": "Sending me",
+"category": "Hilarious"
+},
+{
+"word": "Mother",
+"category": "Icon"
+},
+{
+"word": "Serving",
+"category": "Delivering"
+},
+{
+"word": "Opp",
+"category": "Enemy"
+},
+{
+"word": "Blue light glasses",
+"category": "Protection"
+},
+{
+"word": "Jade roller",
+"category": "Massager"
+},
+{
+"word": "Dry shampoo",
+"category": "Greasy"
+},
+{
+"word": "Micellar water",
+"category": "Remover"
+},
+{
+"word": "Jellycat",
+"category": "Plush"
+},
+{
+"word": "Flip phone",
+"category": "Retro"
+},
+{
+"word": "Birkenstocks",
+"category": "Sandals"
+},
+{
+"word": "Lululemon",
+"category": "Athleisure"
+},
+{
+"word": "Hoka",
+"category": "Chunky"
+},
+{
+"word": "Reusable straw",
+"category": "Turtle"
+},
+{
+"word": "Mason jar",
+"category": "Glass"
+},
+{
+"word": "Tapestry",
+"category": "Decor"
+},
+{
+"word": "Polaroid wall",
+"category": "Memories"
+},
+{
+"word": "Liquid IV",
+"category": "Hydration"
+},
+{
+"word": "Poppi",
+"category": "Soda"
+},
+{
+"word": "Diet Coke",
+"category": "Crisp"
+},
+{
+"word": "Girl dinner",
+"category": "Scraps"
+},
+{
+"word": "Boy dinner",
+"category": "Depressing"
+},
+{
+"word": "Acai bowl",
+"category": "Blended"
+},
+{
+"word": "Hot honey",
+"category": "Drizzle"
+},
+{
+"word": "Instant ramen",
+"category": "Salty"
+},
+{
+"word": "Poke bowl",
+"category": "Raw"
+},
+{
+"word": "Plant-based",
+"category": "Alternative"
+},
+{
+"word": "Quarter-life crisis",
+"category": "Panic"
+},
+{
+"word": "Doing taxes",
+"category": "Adulting"
+},
+{
+"word": "Check engine light",
+"category": "Ignored"
+},
+{
+"word": "Parking ticket",
+"category": "Fine"
+},
+{
+"word": "The laundry chair",
+"category": "Pile"
+},
+{
+"word": "Unpacking",
+"category": "Chore"
+},
+{
+"word": "Junk drawer",
+"category": "Clutter"
+},
+{
+"word": "Tupperware drawer",
+"category": "Chaos"
+},
+{
+"word": "Spam call",
+"category": "Decline"
+},
+{
+"word": "Small talk",
+"category": "Awkward"
+},
+{
+"word": "Eye contact",
+"category": "Intense"
+},
+{
+"word": "Icebreaker",
+"category": "Forced"
+},
+{
+"word": "Third wheel",
+"category": "Extra"
+},
+{
+"word": "Split the bill",
+"category": "Math"
+},
+{
+"word": "Ex's Instagram",
+"category": "Snooping"
+},
+{
+"word": "First date",
+"category": "Nerves"
+},
+{
+"word": "Wingman",
+"category": "Assist"
+},
+{
+"word": "Bumble",
+"category": "Timer"
+},
+{
+"word": "Raya",
+"category": "Exclusive"
+},
+{
+"word": "Group trip",
+"category": "Planning"
+},
+{
+"word": "Shared location",
+"category": "Surveillance"
+},
+{
+"word": "Minigolf",
+"category": "Putt"
+},
+{
+"word": "Beer pong",
+"category": "Aim"
+},
+{
+"word": "Flannel",
+"category": "Plaid"
+},
+{
+"word": "Beanie",
+"category": "Slouchy"
+},
+{
+"word": "Crossbody bag",
+"category": "Strap"
+},
+{
+"word": "Graphic tee",
+"category": "Print"
+},
+{
+"word": "Choker",
+"category": "Neck"
+},
+{
+"word": "Platform shoes",
+"category": "Height"
+},
+{
+"word": "Bucket hat",
+"category": "Brim"
+},
+{
+"word": "Scrunchie",
+"category": "Elastic"
+},
+{
+"word": "Mom jeans",
+"category": "Denim"
+},
+{
+"word": "Dad shoes",
+"category": "Clunky"
+},
+{
+"word": "Thirst trap",
+"category": "Bait"
+},
+{
+"word": "Photobomb",
+"category": "Intruder"
+},
+{
+"word": "Selfie stick",
+"category": "Extension"
+},
+{
+"word": "Tripod",
+"category": "Stand"
+},
+{
+"word": "Vlog",
+"category": "Camera"
+},
+{
+"word": "Streamer",
+"category": "Live"
+},
+{
+"word": "Gamer girl",
+"category": "Headset"
+},
+{
+"word": "E-boy",
+"category": "Chains"
+},
+{
+"word": "Gymbro",
+"category": "Spot"
+},
+{
+"word": "Protein shake",
+"category": "Powder"
+},
+{
+"word": "Creatine",
+"category": "Supplement"
+},
+{
+"word": "Pre-workout",
+"category": "Itch"
+},
+{
+"word": "Leg day",
+"category": "Sore"
+},
+{
+"word": "Treadmill desk",
+"category": "Walking"
+},
+{
+"word": "Smartwatch",
+"category": "Steps"
+},
+{
+"word": "Standing desk",
+"category": "Posture"
+},
+{
+"word": "Ergonomic chair",
+"category": "Support"
+},
+{
+"word": "Second monitor",
+"category": "Screen"
+},
+{
+"word": "Slack",
+"category": "Ping"
+},
+{
+"word": "Microsoft Teams",
+"category": "Muted"
+},
+{
+"word": "Inbox zero",
+"category": "Myth"
+},
+{
+"word": "Out of office",
+"category": "Autoreply"
+},
+{
+"word": "Commute",
+"category": "Traffic"
+},
+{
+"word": "WFH",
+"category": "Pajamas"
+},
+{
+"word": "PTO",
+"category": "Vacation"
+},
+{
+"word": "Salary transparency",
+"category": "Paycheck"
+},
+{
+"word": "Cover letter",
+"category": "Begging"
+},
+{
+"word": "Resume",
+"category": "Exaggeration"
+},
+{
+"word": "Internship",
+"category": "Unpaid"
+},
+{
+"word": "Midterm",
+"category": "Cramming"
+},
+{
+"word": "All-nighter",
+"category": "Awake"
+},
+{
+"word": "Discussion board",
+"category": "Reply"
+},
+{
+"word": "Syllabus",
+"category": "Guidelines"
+},
+{
+"word": "Curve",
+"category": "Grace"
+},
+{
+"word": "Office hours",
+"category": "Help"
+},
+{
+"word": "Dorm room",
+"category": "Twin"
+},
+{
+"word": "Dining hall",
+"category": "Tray"
+},
+{
+"word": "Frat party",
+"category": "Basement"
+},
+{
+"word": "Sorority",
+"category": "Sisters"
+},
+{
+"word": "Rush week",
+"category": "Chants"
+},
+{
+"word": "Tailgate",
+"category": "Parking"
+},
+{
+"word": "Homecoming",
+"category": "Alumni"
+},
+{
+"word": "Prom",
+"category": "Corsage"
+},
+{
+"word": "Graduation",
+"category": "Tassel"
+},
+{
+"word": "Driver's test",
+"category": "Parallel"
+},
+{
+"word": "Learner's permit",
+"category": "Practice"
+},
+{
+"word": "Braces",
+"category": "Wire"
+},
+{
+"word": "Retainer",
+"category": "Plastic"
+},
+{
+"word": "Wisdom teeth",
+"category": "Swollen"
+},
+{
+"word": "Contact lenses",
+"category": "Poke"
+},
+{
+"word": "Laser eye",
+"category": "Zap"
+},
+{
+"word": "Sunburn",
+"category": "Peeling"
+},
+{
+"word": "Mosquito bite",
+"category": "Scratch"
+},
+{
+"word": "Allergy season",
+"category": "Sneeze"
+},
+{
+"word": "Paper cut",
+"category": "Sting"
+},
+{
+"word": "Brain freeze",
+"category": "Slurp"
+},
+{
+"word": "Hiccups",
+"category": "Spasm"
+},
+{
+"word": "Chapped lips",
+"category": "Flaky"
+},
+{
+"word": "Bad hair day",
+"category": "Hat"
+},
+{
+"word": "Wardrobe malfunction",
+"category": "Exposed"
+},
+{
+"word": "Walk of shame",
+"category": "Morning"
+},
+{
+"word": "Irish exit",
+"category": "Vanish"
+},
+{
+"word": "Puke and rally",
+"category": "Recover"
+},
+{
+"word": "Designated driver",
+"category": "Sober"
+},
+{
+"word": "Fake ID",
+"category": "Confiscated"
+},
+{
+"word": "Cover charge",
+"category": "Cash"
+},
+{
+"word": "VIP section",
+"category": "Bottle"
+},
+{
+"word": "Bouncer",
+"category": "Muscle"
+},
+{
+"word": "DJ request",
+"category": "Skip"
+},
+{
+"word": "Open mic",
+"category": "Stage"
+},
+{
+"word": "Stand-up comedy",
+"category": "Heckler"
+},
+{
+"word": "Movie theater",
+"category": "Popcorn"
+},
+{
+"word": "Drive-in",
+"category": "Windshield"
+},
+{
+"word": "Roller rink",
+"category": "Laces"
+},
+{
+"word": "Bowling alley",
+"category": "Strikes"
+},
+{
+"word": "Arcade",
+"category": "Tokens"
+},
+{
+"word": "Laser tag",
+"category": "Vest"
+},
+{
+"word": "Paintball",
+"category": "Bruise"
+},
+{
+"word": "Theme park",
+"category": "Rollercoaster"
+},
+{
+"word": "Water park",
+"category": "Slide"
+},
+{
+"word": "Zoo",
+"category": "Enclosure"
+},
+{
+"word": "Aquarium",
+"category": "Tank"
+},
+{
+"word": "Museum",
+"category": "Exhibit"
+},
+{
+"word": "Planetarium",
+"category": "Dome"
+},
+{
+"word": "Botanical garden",
+"category": "Greenhouse"
+},
+{
+"word": "Picnic",
+"category": "Blanket"
+},
+{
+"word": "Hammock",
+"category": "Swing"
+},
+{
+"word": "Campfire",
+"category": "Roasting"
+},
+{
+"word": "S'mores",
+"category": "Sticky"
+},
+{
+"word": "Tent",
+"category": "Stakes"
+},
+{
+"word": "Sleeping bag",
+"category": "Zipper"
+},
+{
+"word": "Hiking trail",
+"category": "Path"
+},
+{
+"word": "Ski resort",
+"category": "Slopes"
+},
+{
+"word": "Snowboard",
+"category": "Bindings"
+},
+{
+"word": "Surfboard",
+"category": "Wax"
+},
+{
+"word": "Skateboard",
+"category": "Grip"
+},
+{
+"word": "Scooter",
+"category": "Handlebars"
+},
+{
+"word": "Electric bike",
+"category": "Motor"
+},
+{
+"word": "Uber pool",
+"category": "Strangers"
+},
+{
+"word": "Subway",
+"category": "Transit"
+},
+{
+"word": "Flight delay",
+"category": "Terminal"
+},
+{
+"word": "Baggage claim",
+"category": "Carousel"
+},
+{
+"word": "Passport",
+"category": "Stamps"
+},
+{
+"word": "Boarding pass",
+"category": "Gate"
+},
+{
+"word": "Duty-free",
+"category": "Taxless"
+},
+{
+"word": "Jet lag",
+"category": "Timezone"
+},
+{
+"word": "Hotel breakfast",
+"category": "Waffle"
+},
+{
+"word": "Airbnb",
+"category": "Cleaning"
+},
+{
+"word": "Host",
+"category": "Welcoming"
+},
+{
+"word": "Review",
+"category": "Stars"
+},
+{
+"word": "Tip jar",
+"category": "Change"
 }
 ]

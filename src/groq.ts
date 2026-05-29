@@ -1,21 +1,48 @@
 import Groq from 'groq-sdk';
 import dotenv from 'dotenv';
+import * as fs from 'fs';
+import * as path from 'path';
 import { GroqResponse } from './types';
 import { getRandomTheme } from './utils/themes';
 
 dotenv.config();
 
+// SET THIS FLAG:
+// true = Use Groq AI | false = Use local words.json
+export const USE_AI = false;
+
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY,
 });
 
+const localWordsPath = path.join(__dirname, 'words.json');
+let localWords: GroqResponse[] = [];
+if (fs.existsSync(localWordsPath)) {
+    localWords = JSON.parse(fs.readFileSync(localWordsPath, 'utf-8'));
+}
+
 export const generateWord = async (usedWords: string[]): Promise<GroqResponse> => {
+    if (!USE_AI && localWords.length > 0) {
+        // Filter out previously used words during this session
+        const availableWords = localWords.filter(w => !usedWords.includes(w.word));
+        
+        if (availableWords.length === 0) {
+            // Fallback if all words are exhausted in the session: select a random one from the whole list
+            const randomIndex = Math.floor(Math.random() * localWords.length);
+            return localWords[randomIndex] as GroqResponse;
+        }
+
+        // Pick a random word from the available unseen pool
+        const randomIndex = Math.floor(Math.random() * availableWords.length);
+        return availableWords[randomIndex] as GroqResponse;
+    }
+
     const model = process.env.GROQ_MODEL || 'chatgpt-oss-120b'; // Or any valid model id
     
     // We just take a random theme and prompt the model to give us a word and a category
     const theme = getRandomTheme();
     
-    const prompt = `You are an expert party game designer creating prompts for an impostor-style social deduction game for Indian Gen Z players aged 18–21.
+    const prompt = `You are an expert party game designer creating prompts for an impostor-style social deduction game.
 
 Generate:
 1. One secret word.
